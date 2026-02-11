@@ -9,16 +9,16 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
-              <img 
-                src="/diig-logo.png" 
-                alt="DIIG Logo" 
+              <img
+                src="/diig-logo.png"
+                alt="DIIG Logo"
                 className="h-10 w-auto"
               />
             </Link>
             <p className="text-primary-foreground/70 leading-relaxed max-w-md">
-              Duke Impact Investing Group connects Duke students with mission-driven 
-              businesses, providing capital, consulting, and mentorship to create 
-              lasting positive change.
+              Duke Impact Investing Group connects Duke students with
+              mission-driven businesses, providing capital, consulting, and
+              mentorship to create lasting positive change.
             </p>
           </div>
 
@@ -26,16 +26,18 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["Divisions", "Clients", "Students", "Team", "Contact"].map((link) => (
-                <li key={link}>
-                  <Link
-                    to={`/${link.toLowerCase()}`}
-                    className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
+              {["Divisions", "Clients", "Students", "Team", "Contact"].map(
+                (link) => (
+                  <li key={link}>
+                    <Link
+                      to={`/${link.toLowerCase()}`}
+                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                    >
+                      {link}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -55,8 +57,8 @@ export const Footer = () => {
                 Durham, NC
               </div>
               <div className="flex gap-4 pt-2">
-                <a 
-                  href="https://www.linkedin.com/company/diig/" 
+                <a
+                  href="https://www.linkedin.com/company/diig/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
@@ -64,8 +66,8 @@ export const Footer = () => {
                 >
                   <Linkedin size={20} />
                 </a>
-                <a 
-                  href="https://www.instagram.com/dukeimpactinvesting/?hl=en" 
+                <a
+                  href="https://www.instagram.com/dukeimpactinvesting/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
@@ -80,7 +82,8 @@ export const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} Duke Impact Investing Group. All rights reserved.
+            © {new Date().getFullYear()} Duke Impact Investing Group. All
+            rights reserved.
           </p>
         </div>
       </div>

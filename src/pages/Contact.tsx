@@ -14,7 +14,7 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              Have questions about DIIG or interested in partnering with us? 
+              Have questions about DIIG or interested in partnering with us?
               We'd love to hear from you.
             </p>
           </div>
@@ -24,7 +24,10 @@ const Contact = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div
+                className="opacity-0 animate-fade-in-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <h2 className="text-5xl font-display font-bold text-foreground mb-6">
                   Coming Soon
                 </h2>
@@ -32,7 +35,7 @@ const Contact = () => {
                   Our full contact page is currently under construction
                 </p>
                 <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
-                
+
                 {/* Email Contact */}
                 <div className="bg-muted rounded-lg p-8 inline-block">
                   <div className="flex items-center gap-4 justify-center">
@@ -40,9 +43,11 @@ const Contact = () => {
                       <Mail className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div className="text-left">
-                      <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                      <a 
-                        href="mailto:diigbd@gmail.com" 
+                      <h3 className="font-semibold text-foreground mb-1">
+                        Email Us
+                      </h3>
+                      <a
+                        href="mailto:diigbd@gmail.com"
                         className="text-lg text-primary hover:text-primary/80 transition-colors"
                       >
                         diigbd@gmail.com

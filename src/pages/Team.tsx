@@ -17,8 +17,11 @@ const team = [
   { name: "Raiyan Choudhary", role: "Director", division: "Education" },
   { name: "Amy Liu", role: "Director", division: "Data" },
   { name: "Ella Veysel", role: "Director", division: "Business Development" },
-  { name: "Sami Moudarres", role: "Director", division: "Business Development" },
-
+  {
+    name: "Sami Moudarres",
+    role: "Director",
+    division: "Business Development",
+  },
 ];
 
 const Team = () => {
@@ -33,7 +36,7 @@ const Team = () => {
               Our Team
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              Meet the dedicated Duke students driving DIIG's mission to create 
+              Meet the dedicated Duke students driving DIIG's mission to create
               positive impact through investing.
             </p>
           </div>
@@ -53,14 +56,24 @@ const Team = () => {
                   style={{ animationDelay: `${0.1 + index * 0.1}s` }}
                 >
                   <div className="w-32 h-32 mx-auto mb-4 bg-muted rounded-full flex items-center justify-center text-3xl font-display font-bold text-muted-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    {member.name.split(' ').map(n => n[0]).join('')}
+                    {member.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
                   </div>
                   <h3 className="text-lg font-display font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="text-accent font-medium text-sm">{member.role}</p>
-                  <p className="text-muted-foreground text-xs mt-1">{member.year}</p>
-                  <a href="#" className="inline-block mt-2 text-muted-foreground hover:text-accent transition-colors">
+                  <p className="text-accent font-medium text-sm">
+                    {member.role}
+                  </p>
+                  <p className="text-muted-foreground text-xs mt-1">
+                    {member.year}
+                  </p>
+                  <a
+                    href="#"
+                    className="inline-block mt-2 text-muted-foreground hover:text-accent transition-colors"
+                  >
                     <Linkedin size={18} />
                   </a>
                 </div>
@@ -83,7 +96,10 @@ const Team = () => {
                   style={{ animationDelay: `${0.2 + index * 0.05}s` }}
                 >
                   <div className="w-16 h-16 mx-auto mb-3 bg-primary rounded-full flex items-center justify-center text-lg font-display font-bold text-primary-foreground">
-                    {member.name.split(' ').map(n => n[0]).join('')}
+                    {member.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
                   </div>
                   <h3 className="font-display font-semibold text-foreground">
                     {member.name}

@@ -5,25 +5,29 @@ const offerings = [
     icon: DollarSign,
     title: "Providing Capital",
     description: "Empowering Impact",
-    detail: "We provide seed funding to mission-driven startups and social enterprises.",
+    detail:
+      "We provide seed funding to mission-driven startups and social enterprises.",
   },
   {
     icon: Users,
     title: "Consulting Services",
     description: "Expert Guidance",
-    detail: "Our analysts provide strategic consulting to help businesses scale their impact.",
+    detail:
+      "Our analysts provide strategic consulting to help businesses scale their impact.",
   },
   {
     icon: Lightbulb,
     title: "Mentorship",
     description: "Knowledge Transfer",
-    detail: "Connect with experienced mentors from Duke's entrepreneurship ecosystem.",
+    detail:
+      "Connect with experienced mentors from Duke's entrepreneurship ecosystem.",
   },
   {
     icon: TrendingUp,
     title: "Growth Support",
     description: "Scaling Success",
-    detail: "Access to resources, networks, and expertise to accelerate your growth.",
+    detail:
+      "Access to resources, networks, and expertise to accelerate your growth.",
   },
 ];
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -43,8 +43,8 @@
     --gold-light: 42 90% 70%;
     --cream: 40 30% 97%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: "Playfair Display", serif;
+    --font-body: "Inter", sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -96,7 +96,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -106,7 +105,12 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display;
   }
 }
@@ -115,9 +119,9 @@
   .text-highlight {
     @apply relative inline-block;
   }
-  
+
   .text-highlight::after {
-    content: '';
+    content: "";
     @apply absolute left-0 right-0 bottom-0 h-[2px] bg-accent rounded-full;
     transform: scaleX(0.9);
   }
@@ -131,7 +135,7 @@
   }
 
   .nav-link::after {
-    content: '';
+    content: "";
     @apply absolute left-0 right-0 -bottom-1 h-[2px] bg-current scale-x-0 transition-transform duration-300 origin-center;
   }
 

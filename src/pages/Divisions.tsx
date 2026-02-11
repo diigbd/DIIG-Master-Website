@@ -6,31 +6,36 @@ const divisions = [
   {
     icon: BarChart3,
     name: "Data",
-    description: "The Data Division leverages data science, machine learning, and advanced analytics to derive insights and build data-driven solutions for impact-focused organizations.",
+    description:
+      "The Data Division leverages data science, machine learning, and advanced analytics to derive insights and build data-driven solutions for impact-focused organizations.",
     focus: ["Data Analysis", "Machine Learning", "Predictive Modeling"],
   },
   {
     icon: FileText,
     name: "Consulting",
-    description: "The Consulting Division provides pro-bono strategic consulting to social enterprises, helping them scale their operations and impact.",
+    description:
+      "The Consulting Division provides pro-bono strategic consulting to social enterprises, helping them scale their operations and impact.",
     focus: ["Market Research", "Financial Modeling", "Strategy Development"],
   },
   {
     icon: Coins,
     name: "Investment",
-    description: "Our Investment Division manages DIIG's impact fund, conducting due diligence and making investment decisions for mission-driven startups.",
+    description:
+      "Our Investment Division manages DIIG's impact fund, conducting due diligence and making investment decisions for mission-driven startups.",
     focus: ["Due Diligence", "Portfolio Management", "Deal Sourcing"],
   },
   {
     icon: Search,
     name: "Education",
-    description: "Our Education Division develops curriculum and training programs to teach students about impact investing and social entrepreneurship.",
+    description:
+      "Our Education Division develops curriculum and training programs to teach students about impact investing and social entrepreneurship.",
     focus: ["Training Programs", "Speaker Series", "Workshops"],
   },
   {
     icon: TrendingUp,
     name: "Business Development",
-    description: "The Business Development Division builds partnerships and relationships with organizations, alumni, and industry leaders to expand DIIG's impact.",
+    description:
+      "The Business Development Division builds partnerships and relationships with organizations, alumni, and industry leaders to expand DIIG's impact.",
     focus: ["Partnership Building", "Alumni Relations", "Event Coordination"],
   },
 ];
@@ -47,8 +52,8 @@ const Divisions = () => {
               Our Divisions
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              DIIG is organized into specialized divisions, each focused on a unique 
-              aspect of impact investing and social entrepreneurship.
+              DIIG is organized into specialized divisions, each focused on a
+              unique aspect of impact investing and social entrepreneurship.
             </p>
           </div>
         </section>

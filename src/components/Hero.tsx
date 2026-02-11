@@ -1,34 +1,39 @@
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden" style={{ backgroundColor: '#012169' }}>
+    <section
+      className="relative min-h-[90vh] flex items-center overflow-hidden"
+      style={{ backgroundColor: "#012169" }}
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes with animations */}
-        <div 
+        <div
           className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full opacity-5 animate-float"
-          style={{ 
-            background: 'radial-gradient(circle, rgba(253, 181, 21, 0.3) 0%, transparent 70%)',
-            animationDuration: '20s'
+          style={{
+            background:
+              "radial-gradient(circle, rgba(253, 181, 21, 0.3) 0%, transparent 70%)",
+            animationDuration: "20s",
           }}
         />
-        <div 
+        <div
           className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full opacity-5 animate-float"
-          style={{ 
-            background: 'radial-gradient(circle, rgba(253, 181, 21, 0.2) 0%, transparent 70%)',
-            animationDuration: '15s',
-            animationDelay: '2s'
+          style={{
+            background:
+              "radial-gradient(circle, rgba(253, 181, 21, 0.2) 0%, transparent 70%)",
+            animationDuration: "15s",
+            animationDelay: "2s",
           }}
         />
-        
+
         {/* Subtle grid pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
             `,
-            backgroundSize: '100px 100px'
+            backgroundSize: "100px 100px",
           }}
         />
       </div>
@@ -37,22 +42,22 @@ export const Hero = () => {
         <div className="max-w-5xl">
           {/* Main Heading with staggered animation */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-white leading-[1.1] mb-8">
-            <div 
+            <div
               className="opacity-0 animate-fade-in-up"
               style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}
             >
               DUKE IMPACT
             </div>
-            <div 
+            <div
               className="opacity-0 animate-fade-in-up"
               style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
             >
               INVESTING GROUP
             </div>
           </h1>
-          
+
           {/* Subtitle with highlighted text */}
-          <p 
+          <p
             className="text-xl md:text-2xl lg:text-3xl text-white/95 font-light leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}
           >
@@ -83,7 +88,7 @@ export const Hero = () => {
                     strokeDasharray: "920",
                     strokeDashoffset: "920",
                     animationDelay: "0.8s",
-                    animationFillMode: "forwards"
+                    animationFillMode: "forwards",
                   }}
                 />
               </svg>
@@ -93,7 +98,7 @@ export const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div 
+      <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in"
         style={{ animationDelay: "1.5s", animationFillMode: "forwards" }}
       >

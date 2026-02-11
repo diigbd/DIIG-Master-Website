@@ -19,7 +19,7 @@ const Clients = () => {
               Our Clients
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              We partner with mission-driven organizations to create lasting 
+              We partner with mission-driven organizations to create lasting
               social and environmental impact.
             </p>
           </div>
@@ -32,38 +32,48 @@ const Clients = () => {
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12">
                 Our Process for Businesses
               </h2>
-              
+
               <Accordion type="single" collapsible className="w-full space-y-4">
-                <AccordionItem value="connection" className="border border-border rounded-lg px-6 bg-card">
+                <AccordionItem
+                  value="connection"
+                  className="border border-border rounded-lg px-6 bg-card"
+                >
                   <AccordionTrigger className="text-2xl font-display font-semibold text-foreground hover:text-primary">
                     Connection
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground text-lg pt-4">
-                    We begin by understanding your business, mission, and goals. Through 
-                    initial consultations, we identify how DIIG can best support your growth 
-                    and impact objectives.
+                    We begin by understanding your business, mission, and goals.
+                    Through initial consultations, we identify how DIIG can best
+                    support your growth and impact objectives.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="due-diligence" className="border border-border rounded-lg px-6 bg-card">
+                <AccordionItem
+                  value="due-diligence"
+                  className="border border-border rounded-lg px-6 bg-card"
+                >
                   <AccordionTrigger className="text-2xl font-display font-semibold text-foreground hover:text-primary">
                     Due Diligence
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground text-lg pt-4">
-                    Our team conducts comprehensive analysis of your business model, market 
-                    opportunity, financials, and social impact metrics to ensure alignment 
-                    with our investment criteria.
+                    Our team conducts comprehensive analysis of your business
+                    model, market opportunity, financials, and social impact
+                    metrics to ensure alignment with our investment criteria.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="investment" className="border border-border rounded-lg px-6 bg-card">
+                <AccordionItem
+                  value="investment"
+                  className="border border-border rounded-lg px-6 bg-card"
+                >
                   <AccordionTrigger className="text-2xl font-display font-semibold text-foreground hover:text-primary">
                     Investment
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground text-lg pt-4">
-                    We aim to inject capital, mentorship, and resources to grow your business. 
-                    Beyond funding, we provide ongoing strategic support and access to our 
-                    network of industry experts and partners.
+                    We aim to inject capital, mentorship, and resources to grow
+                    your business. Beyond funding, we provide ongoing strategic
+                    support and access to our network of industry experts and
+                    partners.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -74,7 +84,7 @@ const Clients = () => {
                   Interested in Partnering with DIIG?
                 </h3>
                 <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
-                  We're always looking for mission-driven businesses to support. 
+                  We're always looking for mission-driven businesses to support.
                   Reach out to learn more about our process and how we can help.
                 </p>
                 <a

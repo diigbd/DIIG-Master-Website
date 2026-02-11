@@ -21,9 +21,9 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="../diig-logo.png" 
-              alt="DIIG Logo" 
+            <img
+              src="../diig-logo.png"
+              alt="DIIG Logo"
               className="h-10 w-auto"
             />
           </Link>
@@ -45,13 +45,22 @@ export const Navbar = () => {
 
           {/* Social Icons */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
+            <a
+              href="#"
+              className="text-foreground hover:text-accent transition-colors"
+            >
               <Mail size={18} />
             </a>
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
+            <a
+              href="#"
+              className="text-foreground hover:text-accent transition-colors"
+            >
               <Linkedin size={18} />
             </a>
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
+            <a
+              href="#"
+              className="text-foreground hover:text-accent transition-colors"
+            >
               <Instagram size={18} />
             </a>
           </div>

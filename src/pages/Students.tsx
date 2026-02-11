@@ -7,22 +7,26 @@ const benefits = [
   {
     icon: BookOpen,
     title: "Comprehensive Training",
-    description: "Learn about impact investing, financial analysis, and social entrepreneurship through our structured curriculum.",
+    description:
+      "Learn about impact investing, financial analysis, and social entrepreneurship through our structured curriculum.",
   },
   {
     icon: Users,
     title: "Networking Opportunities",
-    description: "Connect with industry professionals, alumni, and fellow students passionate about creating positive change.",
+    description:
+      "Connect with industry professionals, alumni, and fellow students passionate about creating positive change.",
   },
   {
     icon: Briefcase,
     title: "Real-World Experience",
-    description: "Work directly with social enterprises, conducting due diligence, consulting, and portfolio management.",
+    description:
+      "Work directly with social enterprises, conducting due diligence, consulting, and portfolio management.",
   },
   {
     icon: Award,
     title: "Leadership Development",
-    description: "Develop leadership skills through project management, client presentations, and team collaboration.",
+    description:
+      "Develop leadership skills through project management, client presentations, and team collaboration.",
   },
 ];
 
@@ -38,11 +42,11 @@ const Students = () => {
               For Students
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl mb-8">
-              Join a community of Duke students dedicated to learning about and 
+              Join a community of Duke students dedicated to learning about and
               practicing impact investing.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-accent text-accent-foreground hover:bg-gold-light font-semibold"
             >
               Apply Now
@@ -57,8 +61,8 @@ const Students = () => {
               Why Join DIIG?
             </h2>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
-              DIIG offers a unique opportunity to gain hands-on experience in impact 
-              investing while making a real difference in the community.
+              DIIG offers a unique opportunity to gain hands-on experience in
+              impact investing while making a real difference in the community.
             </p>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {benefits.map((benefit, index) => (
@@ -93,9 +97,24 @@ const Students = () => {
             <div className="max-w-3xl mx-auto">
               <div className="space-y-8">
                 {[
-                  { step: "01", title: "Submit Application", description: "Complete our online application form with your resume and statement of interest." },
-                  { step: "02", title: "Initial Interview", description: "Selected candidates will be invited for a brief behavioral interview." },
-                  { step: "03", title: "Case Study & Final Interview", description: "Demonstrate your analytical skills through a case study. Meet with senior members to discuss your interests and fit." },
+                  {
+                    step: "01",
+                    title: "Submit Application",
+                    description:
+                      "Complete our online application form with your resume and statement of interest.",
+                  },
+                  {
+                    step: "02",
+                    title: "Initial Interview",
+                    description:
+                      "Selected candidates will be invited for a brief behavioral interview.",
+                  },
+                  {
+                    step: "03",
+                    title: "Case Study & Final Interview",
+                    description:
+                      "Demonstrate your analytical skills through a case study. Meet with senior members to discuss your interests and fit.",
+                  },
                 ].map((item, index) => (
                   <div
                     key={item.step}
@@ -109,7 +128,9 @@ const Students = () => {
                       <h3 className="text-xl font-display font-semibold text-foreground mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-muted-foreground">{item.description}</p>
+                      <p className="text-muted-foreground">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 ))}

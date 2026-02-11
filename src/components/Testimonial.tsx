@@ -9,9 +9,9 @@ export const Testimonial = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             {/* Client Logo */}
             <div className="flex-shrink-0">
-              <img 
-                src="../produce-box-logo.png" 
-                alt="The Produce Box Logo" 
+              <img
+                src="../produce-box-logo.png"
+                alt="The Produce Box Logo"
                 className="w-64 h-64 rounded-full object-cover"
               />
             </div>
@@ -19,18 +19,18 @@ export const Testimonial = () => {
             {/* Testimonial Text */}
             <div className="flex-1">
               <blockquote className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-6">
-                "We were incredibly impressed with the Duke Impact Investing Group. 
-                The data analysis was{" "}
+                "We were incredibly impressed with the Duke Impact Investing
+                Group. The data analysis was{" "}
                 <span className="relative inline-block">
                   <span>very thorough</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-[#FDB515] opacity-30"></span>
-                </span>
-                {" "}and presented professionally. We are excited to begin our{" "}
+                </span>{" "}
+                and presented professionally. We are excited to begin our{" "}
                 <span className="relative inline-block">
                   <span>third project</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-[#FDB515] opacity-30"></span>
-                </span>
-                {" "}with DIIG and feel confident that the results will be{" "}
+                </span>{" "}
+                with DIIG and feel confident that the results will be{" "}
                 <span className="relative inline-block">
                   <span>equally exceptional</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-[#FDB515] opacity-30"></span>
@@ -38,7 +38,9 @@ export const Testimonial = () => {
                 ."
               </blockquote>
               <div className="text-right mt-8">
-                <p className="font-medium text-gray-900 text-lg">The Produce Box: Supporting 100+ NC Farmers</p>
+                <p className="font-medium text-gray-900 text-lg">
+                  The Produce Box: Supporting 100+ NC Farmers
+                </p>
               </div>
             </div>
           </div>
