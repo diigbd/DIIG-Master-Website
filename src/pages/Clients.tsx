@@ -87,12 +87,6 @@ const Clients = () => {
                   We're always looking for mission-driven businesses to support.
                   Reach out to learn more about our process and how we can help.
                 </p>
-                <a
-                  href="/contact"
-                  className="inline-block bg-background text-foreground px-8 py-3 rounded-lg font-semibold hover:bg-background/90 transition-colors"
-                >
-                  Get in Touch
-                </a>
               </div>
             </div>
           </div>

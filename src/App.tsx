@@ -8,7 +8,6 @@ import Divisions from "./pages/Divisions";
 import Clients from "./pages/Clients";
 import Students from "./pages/Students";
 import Team from "./pages/Team";
-import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,7 +24,6 @@ const App = () => (
           <Route path="/clients" element={<Clients />} />
           <Route path="/students" element={<Students />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
