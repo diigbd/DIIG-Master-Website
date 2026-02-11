@@ -6,6 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Instagram, Linkedin, Mail } from "lucide-react";
+import { socialLinks } from "../data";
 
 const Clients = () => {
   return (
@@ -87,6 +89,36 @@ const Clients = () => {
                   We're always looking for mission-driven businesses to support.
                   Reach out to learn more about our process and how we can help.
                 </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <a
+                    href={`mailto:${socialLinks.email}`}
+                    className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary-foreground/90 transition-colors"
+                    aria-label="Email"
+                  >
+                    <Mail size={20} />
+                    Email
+                  </a>
+                  <a
+                    href={socialLinks.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary-foreground/90 transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram size={20} />
+                    Instagram
+                  </a>
+                  <a
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary-foreground/90 transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin size={20} />
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
