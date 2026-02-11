@@ -47,9 +47,10 @@ const Students = () => {
             </p>
             <Button
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-gold-light font-semibold"
+              className="bg-muted text-muted-foreground font-semibold opacity-70"
+              disabled
             >
-              Apply Now
+              Applications Closed
             </Button>
           </div>
         </section>
@@ -105,15 +106,15 @@ const Students = () => {
                   },
                   {
                     step: "02",
-                    title: "Initial Interview",
+                    title: "Initial Review",
                     description:
-                      "Selected candidates will be invited for a brief behavioral interview.",
+                      "Our team reviews all applications. Additional materials may be required depending on the division you are applying to.",
                   },
                   {
                     step: "03",
-                    title: "Case Study & Final Interview",
+                    title: "Interview",
                     description:
-                      "Demonstrate your analytical skills through a case study. Meet with senior members to discuss your interests and fit.",
+                      "Selected candidates will be invited for an interview to discuss your interests, experience, and fit within DIIG.",
                   },
                 ].map((item, index) => (
                   <div
