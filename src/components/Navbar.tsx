@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Mail, Linkedin, Instagram } from "lucide-react";
+import { socialLinks } from "../data";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -45,20 +46,27 @@ export const Navbar = () => {
           {/* Social Icons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="#"
+              href={`mailto:${socialLinks.email}`}
               className="text-foreground hover:text-accent transition-colors"
+              aria-label="Email"
             >
               <Mail size={18} />
             </a>
             <a
-              href="#"
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground hover:text-accent transition-colors"
+              aria-label="LinkedIn"
             >
               <Linkedin size={18} />
             </a>
             <a
-              href="#"
+              href={socialLinks.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground hover:text-accent transition-colors"
+              aria-label="Instagram"
             >
               <Instagram size={18} />
             </a>
@@ -91,13 +99,29 @@ export const Navbar = () => {
               </Link>
             ))}
             <div className="flex gap-4 pt-4 mt-4 border-t border-border">
-              <a href="#" className="text-foreground hover:text-accent">
+              <a
+                href={`mailto:${socialLinks.email}`}
+                className="text-foreground hover:text-accent"
+                aria-label="Email"
+              >
                 <Mail size={18} />
               </a>
-              <a href="#" className="text-foreground hover:text-accent">
+              <a
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-accent"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="text-foreground hover:text-accent">
+              <a
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-accent"
+                aria-label="Instagram"
+              >
                 <Instagram size={18} />
               </a>
             </div>

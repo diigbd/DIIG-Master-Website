@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Linkedin, Instagram, MapPin } from "lucide-react";
+import { socialLinks } from "../data";
 
 export const Footer = () => {
   return (
@@ -44,11 +45,11 @@ export const Footer = () => {
             <h4 className="font-display font-semibold mb-4">Connect</h4>
             <div className="space-y-3">
               <a
-                href="mailto:diigbd@gmail.com"
+                href={`mailto:${socialLinks.email}`}
                 className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
               >
                 <Mail size={16} />
-                diigbd@gmail.com
+                {socialLinks.email}
               </a>
               <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
                 <MapPin size={16} />
@@ -56,7 +57,7 @@ export const Footer = () => {
               </div>
               <div className="flex gap-4 pt-2">
                 <a
-                  href="https://www.linkedin.com/company/diig/"
+                  href={socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
@@ -65,7 +66,7 @@ export const Footer = () => {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="https://www.instagram.com/dukeimpactinvesting/?hl=en"
+                  href={socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/70 hover:text-accent transition-colors"
