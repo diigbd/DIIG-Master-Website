@@ -1,7 +1,7 @@
 const stats = [
   { value: "$250,000", label: "Impact Fund" },
-  { value: ">120", label: "Analysts" },
-  { value: ">80", label: "Completed Projects" },
+  { value: ">150", label: "Active Members" },
+  { value: ">100", label: "Completed Projects" },
 ];
 
 export const Stats = () => {
