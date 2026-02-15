@@ -18,11 +18,10 @@ const Clients = () => {
         <section className="bg-primary py-24">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
-              Consulting
+              Business Development
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              We provide consulting services for socially-minded businesses of all sizes. Our teams have worked on cases ranging from market research to competitive analyses to customer discovery. We equip our clients with capable and trained undergraduate consulting teams to help businesses grow and scale. We hope to drive social impact and value for our clients and our investments. We aspire to set up businesses with capable and trained undergraduate consulting teams to help businesses grow and scale, with a major goal of generating significant positive social impact.
-            </p>
+              The Business Development (BD) Team is responsible for both the external branding of DIIG and the internal synergy within the organization. In addition to managing client-outreach and planning the annual DIIG Spring Case Competition, the division focuses on online engagement strategies including social media and research blog posts to promote DIIG’s services. Beyond external-facing functions, BD is also responsible for organizational events, such as General Body Meetings (GBMs) and professional initiatives.            </p>
           </div>
         </section>
 
