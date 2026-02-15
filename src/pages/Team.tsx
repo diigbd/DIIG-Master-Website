@@ -32,7 +32,7 @@ const Team = () => {
             </h2>
 
             {/* Bigger grid + spacing */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {partners.map((member, index) => (
                 <div
                   key={member.name}
@@ -74,7 +74,7 @@ const Team = () => {
             </h2>
 
             {/* Bigger cards by reducing columns + increasing max width */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
               {directors.map((member, index) => (
                 <div
                   key={member.name}
