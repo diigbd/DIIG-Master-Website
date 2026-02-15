@@ -6,10 +6,10 @@ export const socialLinks = {
 
 export const leadership = {
   partners: [
-    { name: "Danielle Park", year: 2026 },
-    { name: "Andy Li", year: 2025 },
-    { name: "Alayna Binder", year: 2025 },
-    { name: "Sreya Gnanavel", year: 2025 },
+    { name: "Danielle Park", year: 2027 },
+    { name: "Andy Li", year: 2026 },
+    { name: "Alayna Binder", year: 2026 },
+    { name: "Sreya Gnanavel", year: 2026 },
   ],
   directors: [
     { name: "Amy Liu", division: "Data" },
