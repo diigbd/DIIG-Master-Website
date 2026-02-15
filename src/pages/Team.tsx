@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Linkedin } from "lucide-react";
 
 import { leadership } from "@/data";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -19,7 +18,7 @@ const Team = () => {
               Our Team
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              Meet the dedicated Duke students driving DIIG's mission to create
+              Meet the dedicated Duke students driving DIIG&apos;s mission to create
               positive impact through investing.
             </p>
           </div>
@@ -31,29 +30,34 @@ const Team = () => {
             <h2 className="text-3xl md:text-4xl font-display text-center text-foreground mb-12">
               Partners
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+
+            {/* Bigger grid + spacing */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
               {partners.map((member, index) => (
                 <div
                   key={member.name}
                   className="text-center group opacity-0 animate-fade-in-up"
                   style={{ animationDelay: `${0.1 + index * 0.1}s` }}
                 >
-                  <Avatar className="w-32 h-32 mx-auto mb-4">
+                  {/* Bigger avatar */}
+                  <Avatar className="w-44 h-44 mx-auto mb-6">
                     <AvatarImage
                       src={`/team/${member.name.split(" ")[0]}.jpeg`}
                       alt={member.name}
                     />
-                    <AvatarFallback className="text-2xl font-display font-bold bg-primary text-primary-foreground">
+                    <AvatarFallback className="text-3xl font-display font-bold bg-primary text-primary-foreground">
                       {member.name
                         .split(" ")
                         .map((n) => n[0])
                         .join("")}
                     </AvatarFallback>
                   </Avatar>
-                  <h3 className="text-lg font-display font-semibold text-foreground">
+
+                  {/* Bigger text */}
+                  <h3 className="text-xl font-display font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="text-accent font-medium text-sm">
+                  <p className="text-accent font-medium text-base mt-1">
                     {member.year}
                   </p>
                 </div>
@@ -68,30 +72,38 @@ const Team = () => {
             <h2 className="text-3xl md:text-4xl font-display text-center text-foreground mb-12">
               Directors
             </h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+            {/* Bigger cards by reducing columns + increasing max width */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {directors.map((member, index) => (
                 <div
                   key={member.name}
-                  className="bg-card p-6 rounded-lg text-center hover:shadow-lg transition-shadow opacity-0 animate-fade-in-up"
+                  className="bg-card p-8 rounded-xl text-center hover:shadow-lg transition-shadow opacity-0 animate-fade-in-up"
                   style={{ animationDelay: `${0.2 + index * 0.05}s` }}
                 >
-                  <Avatar className="w-16 h-16 mx-auto mb-3">
+                  {/* Bigger avatar */}
+                  <Avatar className="w-24 h-24 mx-auto mb-4">
                     <AvatarImage
                       src={`/team/${member.name.split(" ")[0]}.jpeg`}
                       alt={member.name}
                     />
-                    <AvatarFallback className="text-lg font-display font-bold bg-primary text-primary-foreground">
+                    <AvatarFallback className="text-xl font-display font-bold bg-primary text-primary-foreground">
                       {member.name
                         .split(" ")
                         .map((n) => n[0])
                         .join("")}
                     </AvatarFallback>
                   </Avatar>
-                  <h3 className="font-display font-semibold text-foreground">
+
+                  {/* Bigger text */}
+                  <h3 className="text-lg font-display font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm">{member.role}</p>
-                  <span className="inline-block mt-2 text-xs font-medium px-2 py-1 bg-secondary text-secondary-foreground rounded-full">
+                  <p className="text-base text-muted-foreground mt-1">
+                    {member.role}
+                  </p>
+
+                  <span className="inline-block mt-3 text-sm font-medium px-3 py-1.5 bg-secondary text-secondary-foreground rounded-full">
                     {member.division}
                   </span>
                 </div>
@@ -100,6 +112,7 @@ const Team = () => {
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );
