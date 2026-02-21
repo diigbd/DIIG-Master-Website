@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { BarChart3, FileText, Coins, Search, TrendingUp } from "lucide-react";
 
 const divisions = [
@@ -9,6 +10,7 @@ const divisions = [
     description:
       "The Data Division leverages data science, machine learning, and advanced analytics to derive insights and build data-driven solutions for impact-focused organizations.",
     focus: ["Data Analysis", "Machine Learning", "Predictive Modeling"],
+    href: "/divisions/data",
   },
   {
     icon: FileText,
@@ -16,6 +18,7 @@ const divisions = [
     description:
       "The Consulting Division provides pro-bono strategic consulting to social enterprises, helping them scale their operations and impact.",
     focus: ["Market Research", "Financial Modeling", "Strategy Development"],
+    href: "/divisions/consulting",
   },
   {
     icon: Coins,
@@ -23,6 +26,7 @@ const divisions = [
     description:
       "Our Investment Division manages DIIG's impact fund, conducting due diligence and making investment decisions for mission-driven startups.",
     focus: ["Due Diligence", "Portfolio Management", "Deal Sourcing"],
+    href: "/divisions/investing",
   },
   {
     icon: Search,
@@ -30,6 +34,7 @@ const divisions = [
     description:
       "Our Education Division develops curriculum and training programs to teach students about impact investing and social entrepreneurship.",
     focus: ["Training Programs", "Speaker Series", "Workshops"],
+    href: "/divisions/education",
   },
   {
     icon: TrendingUp,
@@ -37,6 +42,7 @@ const divisions = [
     description:
       "The Business Development Division builds partnerships and relationships with organizations, alumni, and industry leaders to expand DIIG's impact.",
     focus: ["Partnership Building", "Alumni Relations", "Event Coordination"],
+    href: "/divisions/bd",
   },
 ];
 
@@ -63,15 +69,16 @@ const Divisions = () => {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {divisions.map((division, index) => (
-                <div
+                <Link
                   key={division.name}
-                  className="bg-card border border-border p-8 rounded-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-fade-in-up"
+                  to={division.href}
+                  className="bg-card border border-border p-8 rounded-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-fade-in-up group"
                   style={{ animationDelay: `${0.1 + index * 0.1}s` }}
                 >
                   <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-6">
                     <division.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="text-2xl font-display font-semibold text-foreground mb-4">
+                  <h3 className="text-2xl font-display font-semibold text-foreground mb-4 group-hover:text-primary group-hover:underline transition-colors">
                     {division.name}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
@@ -87,7 +94,7 @@ const Divisions = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
