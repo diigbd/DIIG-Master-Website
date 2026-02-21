@@ -8,6 +8,11 @@ import Divisions from "./pages/Divisions";
 import Clients from "./pages/Clients";
 import Students from "./pages/Students";
 import Team from "./pages/Team";
+import Consulting from "./pages/divisions/Consulting";
+import Investing from "./pages/divisions/Investing";
+import Data from "./pages/divisions/Data";
+import Education from "./pages/divisions/Education";
+import BD from "./pages/divisions/BD";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +29,11 @@ const App = () => (
           <Route path="/clients" element={<Clients />} />
           <Route path="/students" element={<Students />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/divisions/consulting" element={<Consulting />} />
+          <Route path="/divisions/investing" element={<Investing />} />
+          <Route path="/divisions/data" element={<Data />} />
+          <Route path="/divisions/education" element={<Education />} />
+          <Route path="/divisions/bd" element={<BD />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

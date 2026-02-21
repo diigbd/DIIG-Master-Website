@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
-import { socialLinks } from "../data";
+import { socialLinks } from "../../data";
 
 const Clients = () => {
   return (
@@ -18,10 +18,16 @@ const Clients = () => {
         <section className="bg-primary py-24">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
-              Data
+              Investing
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              The Data team empowers clients to achieve their maximum potential by providing data-driven solutions to their business questions. Our team comprises of data analysts from diverse backgrounds who are equipped to tackle real-life data challenges and drive results.            </p>
+              The Investment division manages Duke's first and only impact VC
+              fund. We manage $250K, the largest sum ever entrusted to a student
+              group by Duke University. We source social impact startups to
+              invest in and conduct due diligence on deals that fit our
+              investment criteria in the sectors of education and health,
+              fintech, consumer products, energy and environment.{" "}
+            </p>
           </div>
         </section>
 

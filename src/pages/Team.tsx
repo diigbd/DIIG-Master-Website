@@ -18,8 +18,8 @@ const Team = () => {
               Our Team
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              Meet the dedicated Duke students driving DIIG&apos;s mission to create
-              positive impact through investing.
+              Meet the dedicated Duke students driving DIIG&apos;s mission to
+              create positive impact through investing.
             </p>
           </div>
         </section>

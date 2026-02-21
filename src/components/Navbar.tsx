@@ -43,7 +43,9 @@ export const Navbar = () => {
                     key={link.name}
                     to={link.href}
                     className={`nav-link text-foreground hover:text-accent ${
-                      location.pathname === link.href ? "active text-accent" : ""
+                      location.pathname === link.href
+                        ? "active text-accent"
+                        : ""
                     }`}
                   >
                     {link.name}

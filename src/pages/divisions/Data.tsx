@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
-import { socialLinks } from "../data";
+import { socialLinks } from "../../data";
 
 const Clients = () => {
   return (
@@ -18,10 +18,15 @@ const Clients = () => {
         <section className="bg-primary py-24">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
-              Business Development
+              Data
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              The Business Development (BD) Team is responsible for both the external branding of DIIG and the internal synergy within the organization. In addition to managing client-outreach and planning the annual DIIG Spring Case Competition, the division focuses on online engagement strategies including social media and research blog posts to promote DIIG’s services. Beyond external-facing functions, BD is also responsible for organizational events, such as General Body Meetings (GBMs) and professional initiatives.            </p>
+              The Data team empowers clients to achieve their maximum potential
+              by providing data-driven solutions to their business questions.
+              Our team comprises of data analysts from diverse backgrounds who
+              are equipped to tackle real-life data challenges and drive
+              results.{" "}
+            </p>
           </div>
         </section>
 

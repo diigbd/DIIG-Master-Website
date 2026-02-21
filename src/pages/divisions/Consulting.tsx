@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
-import { socialLinks } from "../data";
+import { socialLinks } from "../../data";
 
 const Clients = () => {
   return (
@@ -21,7 +21,15 @@ const Clients = () => {
               Consulting
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              We provide consulting services for socially-minded businesses of all sizes. Our teams have worked on cases ranging from market research to competitive analyses to customer discovery. We equip our clients with capable and trained undergraduate consulting teams to help businesses grow and scale. We hope to drive social impact and value for our clients and our investments. We aspire to set up businesses with capable and trained undergraduate consulting teams to help businesses grow and scale, with a major goal of generating significant positive social impact.
+              We provide consulting services for socially-minded businesses of
+              all sizes. Our teams have worked on cases ranging from market
+              research to competitive analyses to customer discovery. We equip
+              our clients with capable and trained undergraduate consulting
+              teams to help businesses grow and scale. We hope to drive social
+              impact and value for our clients and our investments. We aspire to
+              set up businesses with capable and trained undergraduate
+              consulting teams to help businesses grow and scale, with a major
+              goal of generating significant positive social impact.
             </p>
           </div>
         </section>
