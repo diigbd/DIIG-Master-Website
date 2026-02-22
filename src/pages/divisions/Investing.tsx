@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../data";
+import { Roster } from "@/components/Roster";
 
 const Clients = () => {
   return (
@@ -82,6 +83,7 @@ const Clients = () => {
             </div>
           </div>
         </section>
+        <Roster division="investing" />
       </main>
       <Footer />
     </div>
