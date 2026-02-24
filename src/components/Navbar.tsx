@@ -14,7 +14,7 @@ const navLinks = [
 
 const divisions = [
   { name: "Consulting", href: "/divisions/consulting" },
-  { name: "Investing", href: "/divisions/investing" },
+  { name: "Investment", href: "/divisions/investment" },
   { name: "Data", href: "/divisions/data" },
   { name: "Education", href: "/divisions/education" },
   { name: "Business Development", href: "/divisions/bd" },

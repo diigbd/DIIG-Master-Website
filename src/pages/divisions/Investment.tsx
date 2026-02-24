@@ -1,16 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../data";
 import { Roster } from "@/components/Roster";
 
-const Clients = () => {
+const Investment = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -19,7 +13,7 @@ const Clients = () => {
         <section className="bg-primary py-24">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
-              Investing
+              Investment
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl">
               The Investment division manages Duke's first and only impact VC
@@ -83,11 +77,11 @@ const Clients = () => {
             </div>
           </div>
         </section>
-        <Roster division="investing" />
+        <Roster division="investment" />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Clients;
+export default Investment;

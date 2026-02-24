@@ -26,7 +26,7 @@ const divisions = [
     description:
       "Our Investment Division manages DIIG's impact fund, conducting due diligence and making investment decisions for mission-driven startups.",
     focus: ["Due Diligence", "Portfolio Management", "Deal Sourcing"],
-    href: "/divisions/investing",
+    href: "/divisions/investment",
   },
   {
     icon: Search,

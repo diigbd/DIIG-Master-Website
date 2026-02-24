@@ -575,7 +575,7 @@ export const roster = {
       subdivision: "",
     },
   ],
-  investing: [
+  investment: [
     {
       name: "Cheyenne  Tan",
       role: "Analyst",

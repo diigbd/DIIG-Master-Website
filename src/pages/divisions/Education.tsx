@@ -1,16 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../data";
 import { Roster } from "@/components/Roster";
 
-const Clients = () => {
+const Education = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -92,4 +86,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Education;
