@@ -13,6 +13,7 @@ import Investing from "./pages/divisions/Investing";
 import Data from "./pages/divisions/Data";
 import Education from "./pages/divisions/Education";
 import BD from "./pages/divisions/BD";
+import DKU from "./pages/DKU";
 import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "./components/ScrollToTop";
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/divisions/data" element={<Data />} />
           <Route path="/divisions/education" element={<Education />} />
           <Route path="/divisions/bd" element={<BD />} />
+          <Route path="/dku" element={<DKU />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

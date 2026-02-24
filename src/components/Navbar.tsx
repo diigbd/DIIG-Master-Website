@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Clients", href: "/clients" },
   { name: "Students", href: "/students" },
   { name: "Team", href: "/team" },
+  { name: "DKU", href: "/dku" },
 ];
 
 const divisions = [
