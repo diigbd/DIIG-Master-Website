@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Roster } from "@/components/Roster";
+import { PastClients } from "@/components/PastClients";
 
 const Consulting = () => {
   return (
@@ -25,6 +26,8 @@ const Consulting = () => {
             </p>
           </div>
         </section>
+
+        <PastClients division="consulting" />
 
         <Roster division="consulting" />
       </main>

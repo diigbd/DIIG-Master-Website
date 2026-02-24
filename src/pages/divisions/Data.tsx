@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Roster } from "@/components/Roster";
+import { PastClients } from "@/components/PastClients";
 
 const Data = () => {
   return (
@@ -21,6 +22,8 @@ const Data = () => {
             </p>
           </div>
         </section>
+
+        <PastClients division="data" />
 
         <Roster division="data" />
       </main>

@@ -1336,3 +1336,62 @@ export const roster = {
     },
   ],
 };
+
+export const pastClients = {
+  data: [
+    {
+      name: "Green-To-Go",
+      logo: "green-to-go.png",
+      description:
+        "Green-To-Go is a subscription service providing reusable take-out containers. The team analyzed static data to provide insights such as check-out rates, membership growth, and restaurant performance.",
+      deliverableLink:
+        "https://docs.google.com/presentation/d/1_MR53GqPyIhjYog8lXC8Rdn-ABFoGDevyWuOD2inJYk/edit",
+    },
+    {
+      name: "Junior Achievement",
+      logo: "junior-achievement.png",
+      description:
+        "Junior Achievement is a nonprofit youth organization that works with local businesses, schools, and organizations to deliver experiential learning programs on work readiness, financial literacy, and entrepreneurship to young students.",
+    },
+    {
+      name: "The Produce Box",
+      logo: "the-produce-box.png",
+      description:
+        "The Produce Box is a subscription service that connects consumers to local farmers and artisans across North Carolina.",
+      deliverableLink:
+        "https://docs.google.com/presentation/d/1dwv74oWhiVXlcZR6VazV69khOvBz2PMQiL0TquTLO4U/edit",
+    },
+    {
+      name: "Ginger",
+      logo: "ginger.png",
+      description:
+        "Ginger (now Headspace) is a behavioral health monitoring platform that combines human care with data science and augmented intelligence to deliver on-demand mental healthcare.",
+    },
+  ],
+  consulting: [
+    {
+      name: "Solar Unsoiled",
+      logo: "solar-unsoiled.png",
+      description:
+        "Solar Unsoiled is an interactive, data-driven platform to optimize global solar energy production. Our team conducted market research on commercial-scale solar companies and identified market opportunities for these companies.",
+    },
+    {
+      name: "Engage Globally",
+      logo: "engage-globally.png",
+      description:
+        "Engage Globally supports community-led sustainable development in rural Northern Ghana. Our team identified potential small/medium business partners for the client to contact about potential financial support, researched regulatory process for nonprofits seeking to sell products in the U.S, and outlined a strategic business process map.",
+    },
+    {
+      name: "Fillaree",
+      logo: "fillaree.png",
+      description:
+        "Fillaree is a zero waste sustainable soap company. Our team defined a digital marketing strategy and conducted market outreach to better engage our client's audience.",
+    },
+    {
+      name: "East Coast Greenway Alliance",
+      logo: "east-coast-greenway-alliance.png",
+      description:
+        "The East Coast Greenway Alliance leads the development of the trail network. We completed a growth assessment of the organization and provided insights on compliance regulations for consideration.",
+    },
+  ],
+};
