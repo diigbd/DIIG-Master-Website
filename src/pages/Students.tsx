@@ -2,6 +2,32 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Users, Briefcase, Award } from "lucide-react";
+import {
+  applicationsOpen,
+  applicationDeadline,
+  applicationFormUrl,
+} from "@/lib/applications";
+
+const statusNote = applicationsOpen
+  ? `Applications are open until ${applicationDeadline}.`
+  : "Applications are closed for now. Please check back next semester.";
+
+const ApplyButton = ({ className }: { className: string }) =>
+  applicationsOpen ? (
+    <Button asChild size="lg" className={className}>
+      <a href={applicationFormUrl} target="_blank" rel="noopener noreferrer">
+        Apply Now
+      </a>
+    </Button>
+  ) : (
+    <Button
+      size="lg"
+      className="bg-muted text-muted-foreground font-semibold opacity-70"
+      disabled
+    >
+      Applications Closed
+    </Button>
+  );
 
 const benefits = [
   {
@@ -45,13 +71,10 @@ const Students = () => {
               Join a community of Duke students dedicated to learning about and
               practicing impact investing.
             </p>
-            <Button
-              size="lg"
-              className="bg-muted text-muted-foreground font-semibold opacity-70"
-              disabled
-            >
-              Applications Closed
-            </Button>
+            <p className="text-lg font-semibold text-accent mb-8">
+              {statusNote}
+            </p>
+            <ApplyButton className="bg-accent text-accent-foreground font-semibold hover:bg-accent/90" />
           </div>
         </section>
 
@@ -135,6 +158,12 @@ const Students = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="mt-12 text-center">
+                <ApplyButton className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90" />
+                <p className="text-sm text-muted-foreground mt-4">
+                  {statusNote}
+                </p>
               </div>
             </div>
           </div>
